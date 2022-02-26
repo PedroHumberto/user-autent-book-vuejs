@@ -1,12 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Register from '../components/Register.vue'
+import Login from '../components/Login.vue'
 
 const routes = [
   {
+    path: '/',
+    name: Login,
+    component: Login
+  },
+  {
     path: '/register',
     name: 'Register',
-    component: Register
+    component: () => import(/* webpackChunkName: "register" */ '../components/Register.vue')
   },
+  {
+    path: '/notes',
+    name: 'Panel',
+    component: () => import(/* webpackChunkName: "painel" */ '../components/Panel.vue')
+  }
+
 ]
 
 const router = createRouter({

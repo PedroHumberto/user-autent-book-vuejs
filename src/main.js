@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import store from './store'
 import router from './router'
-import Input from './components/Input.vue'
+import Input from './components/MyInput.vue'
 
 createApp(App)
     .use(router)

@@ -1,12 +1,12 @@
 import { mount } from '@vue/test-utils'
 import Register from '../src/components/Register.vue'
-import Input from '../src/components/Input.vue'
+import MyInput from '../src/components/MyInput.vue'
 
 test('formulário de registro com mock de ação', async () =>{
     const wrapper = mount(Register, {
         global: {
             components: {
-                Input
+                MyInput
             }
         }
     })
